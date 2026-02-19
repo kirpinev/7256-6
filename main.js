@@ -14,11 +14,11 @@ function sendAnalyticsEvent(gaEvent, ymEvent) {
 function renderLanding() {
   // Отправляем событие просмотра экрана только один раз за сессию
   if (!sessionStorage.getItem('landingViewed')) {
-    sendAnalyticsEvent('7193_page_view_var6', '7193_page_view_var6');
+    sendAnalyticsEvent('7256_page_view_var6', '7256_page_view_var6');
     sessionStorage.setItem('landingViewed', '1');
   }
   // Если уже была заглушка для этого варианта, не показываем лендинг
-  if (localStorage.getItem('7193_placeholderShown_var6') === '1') {
+  if (localStorage.getItem('7256_placeholderShown_var6') === '1') {
     renderPlaceholder();
     return;
   }
@@ -91,8 +91,8 @@ function renderLanding() {
     </div>
   `;
   document.getElementById('sendBtn').onclick = () => {
-    sendAnalyticsEvent('7193_click_continue_var6', '7193_click_continue_var6');
-    localStorage.setItem('7193_placeholderShown_var6', '1');
+    sendAnalyticsEvent('7256_click_continue_var6', '7256_click_continue_var6');
+    localStorage.setItem('7256_placeholderShown_var6', '1');
     renderPlaceholder();
     // Очищаем историю, чтобы нельзя было вернуться назад
     history.replaceState(null, '', location.href);
@@ -102,7 +102,7 @@ function renderLanding() {
 function renderPlaceholder() {
   // Отправляем событие просмотра финальной страницы только один раз за сессию
   if (!sessionStorage.getItem('endPageViewed')) {
-    sendAnalyticsEvent('7193_end_page_view_var6', '7193_end_page_view_var6');
+    sendAnalyticsEvent('7256_end_page_view_var6', '7256_end_page_view_var6');
     sessionStorage.setItem('endPageViewed', '1');
   }
   app.innerHTML = `
