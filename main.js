@@ -29,8 +29,9 @@ function renderLanding() {
           <div class="landing__header-title">Рекомендуйте</div>
           <div class="landing__header-subtitle"><span style="white-space: nowrap;">Альфа-Смарт</span></div>
           <div class="landing__header-bonuses">
-            <div class="landing__bonus"><span style="white-space: nowrap;">Вам: 200 ₽</span></div>
-            <div class="landing__bonus"><span style="white-space: nowrap;">Другу: 1 месяц бесплатно</span></div>
+            <div class="landing__bonus"><span style="white-space: nowrap;">Вам: 1 месяц бесплатно</span></div>
+            <div class="landing__bonus"><span style="white-space: nowrap;">Другу: 2 месяца бесплатно</span></div>
+            <div class="landing__bonus-note">Начислим после того, как друг подключит подписку</div>
           </div>
         </div>
         <div class="landing__header-icon">
@@ -108,9 +109,12 @@ function renderPlaceholder() {
   app.innerHTML = `
     <div class="placeholder">
       <img src="img/moai.png" alt="Moai" class="placeholder__img" />
-      <div class="placeholder__title">Только тссс</div>
+      <div class="placeholder__title">Сервис ещё в работе</div>
       <div class="placeholder__desc">
-        Вы поучаствовали в очень важном исследовании, которое поможет улучшить продукт. Вы – наш герой!
+        Мы выбираем лучшие условия, чтобы вам точно понравилось. С нетерпением ждём, когда всё заработает, чтобы показать вам.
+      </div>
+      <div class="placeholder__action">
+        Пока можете подключить Альфа-Смарт или подключить семейный тариф
       </div>
     </div>
   `;
