@@ -82,7 +82,7 @@ function renderLanding() {
               <img src="img/Subtract4.png" alt="Проценты" class="landing__privilege-icon-img" />
             </div>
             <div class="landing__privilege-text">
-              <div class="landing__privilege-title">+2% годовых к ставке по Альфа-Счёту</div>
+              <div class="landing__privilege-title">Повышенная ставка по Альфа-Счёту</div>
               <div class="landing__privilege-desc">На ежедневный остаток</div>
             </div>
           </li>
